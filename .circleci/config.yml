@@ -82,10 +82,10 @@ workflows:
       - rake_test:
           requires:
             - bundle_dependencies
-      - precompile_assets:
-          requires:
-            - bundle_dependencies
-      - deploy:
-          requires:
-            - rake_test
-            - precompile_assets
+      #- precompile_assets:
+      #    requires:
+      #      - bundle_dependencies
+      #- deploy:
+      #    requires:
+      #      - rake_test
+      #      - precompile_assets
